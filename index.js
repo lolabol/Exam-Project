@@ -18,9 +18,12 @@ function updateTime() {
   const milliseconds = Math.floor(diff % 1000);
 
   display.textContent =
-    String(hours).padStart(2, "0") + ":" +
-    String(minutes).padStart(2, "0") + ":" +
-    String(seconds).padStart(2, "0") + ":" +
+    String(hours).padStart(2, "0") +
+    ":" +
+    String(minutes).padStart(2, "0") +
+    ":" +
+    String(seconds).padStart(2, "0") +
+    ":" +
     String(milliseconds).padStart(3, "0");
 }
 
@@ -49,6 +52,7 @@ resetBtn.addEventListener("click", () => {
 // Dark/Light theme toggle
 themeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark");
-  themeToggle.textContent = 
-    document.body.classList.contains("dark") ? "Light Mode" : "Dark Mode";
+  themeToggle.textContent = document.body.classList.contains("dark")
+    ? "Light Mode"
+    : "Dark Mode";
 });

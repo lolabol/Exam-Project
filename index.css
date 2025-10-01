@@ -1,49 +1,45 @@
-/* General styles */
 body {
   font-family: Arial, sans-serif;
-    margin: 0;
-  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(146, 26, 146);
 }
 
 .pagehead {
-font-family: Arial, sans-serif;
-align-self: flex-start;
-padding: 15px;
+  font-family: Arial, sans-serif;
+  align-self: flex-start;
+  padding: 15px;
 }
 
 .watch {
-        flex-direction: column;
-     font-family: Arial, sans-serif;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 70vh;
   margin: 0;
- }
+}
 
 .container {
-   
   text-align: center;
   padding: 20px;
   border-radius: 10px;
   justify-content: center;
-  background: #fff;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
+  background: rgb(146, 26, 146);
+  }
 
 h1 {
   margin-bottom: 20px;
 }
 
 #display {
-  font-size: 2.5em;
-  font-weight: bold;
+  font-size: 80px;
   margin: 20px 0;
-  background: #000;
-  color: #0f0;
+  background: rgb(146, 26, 146);
+  color: white;
   padding: 15px;
-  border-radius: 8px;
-  font-family: "Courier New", monospace;
+  font-family: Arial, sans-serif;
 }
 
 /* buttons */
@@ -59,7 +55,7 @@ button {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s, transform 0.2s;
+  /* transition: background 0.3s, transform 0.2s; */
 }
 
 button:hover {
@@ -67,13 +63,18 @@ button:hover {
 }
 
 #startStop {
-  background: #28a745;
+  background: pink;
   color: white;
+  border-radius: 50px;
+  width: 180px;
+  height: 150px;
+  font-size: 30px;
 }
 
 #reset {
   background: #dc3545;
   color: white;
+  font-size: 50px;
 }
 
 #themeToggle {
